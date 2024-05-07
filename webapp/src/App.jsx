@@ -1,8 +1,8 @@
 import { WriteData } from "./components/WriteData";
 import { ReadData } from "./components/ReadData";
 
-const AVAILABLE_FIELDS = ["age"];
-const BASE_URL = "http://localhost:8080/users";
+const AVAILABLE_FIELDS = [""];
+const BASE_URL = "https://d1vjn6dipu3c0u.cloudfront.net/";
 
 function App() {
   return (
