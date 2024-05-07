@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background-color: #efefef;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+h1 {
+  margin: 20px 0 20px 0;
+  color: #ff3474;
+}
+
+hr {
+  margin: 60px 0 60px 0;
+  border-top: 1px solid #ff3474;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  .card {
+    background-color: #f8f6f5;
+    box-shadow: 0 0 10px #dadada;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 470px;
+    .cardHead {
+      padding: 13px;
+      background: linear-gradient(
+        90deg,
+        rgba(255, 98, 59, 1) 0%,
+        rgba(255, 52, 116, 1) 100%
+      );
+      color: white;
+      text-align: center;
+      font-weight: bold;
+    }
+    .cardContent {
+      padding: 20px;
+      .attribute {
+        margin: 0 0 15px 0;
+        display: flex;
+        &:first-child {
+          margin-top: 10px;
+        }
+        .attributeName {
+          width: 29%;
+          margin-right: 3%;
+          color: #ff623bff;
+          font-weight: bold;
+        }
+        .attributeValue {
+          width: 68%;
+        }
+      }
+    }
+  }
+}
+
+.writeContainer {
+  background-color: #f8f6f5;
+  width: 400px;
+  display: table;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #dadada;
+  overflow: hidden;
+  table-layout: fixed;
+  padding: 20px 30px 30px 30px;
+
+  .writeAttribute {
+    display: table-row;
+    color: #ff623b;
+    font-weight: bold;
+
+    .writeAttributeName {
+      display: table-cell;
+      //padding: 15px 25px 15px 50px;
+    }
+
+    .writeAttributeInput {
+      display: table-cell;
+      //padding-right: 50px;
+    }
+  }
+}
+input {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ff623b;
+}
+button {
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 98, 59, 1),
+    rgba(255, 52, 116, 1),
+    rgba(255, 52, 116, 1),
+    rgba(255, 98, 59, 1)
+  );
+  background-size: 300% 100%;
+  //box-shadow: 0 4px 15px 0 rgba(255, 52, 116, 0.75);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 30px auto;
+  transition: all 0.4s ease-in-out;
+  font-weight: bold;
+
+  &:hover {
+    transition: all 0.4s ease-in-out;
+    background-position: 100% 0;
+  }
+}
