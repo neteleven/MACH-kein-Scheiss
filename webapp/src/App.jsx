@@ -1,8 +1,8 @@
 import { WriteData } from "./components/WriteData";
 import { ReadData } from "./components/ReadData";
 
-const AVAILABLE_FIELDS = [""];
-const BASE_URL = "https://d1vjn6dipu3c0u.cloudfront.net/";
+const AVAILABLE_FIELDS = ["name", "price"];
+const BASE_URL = "https://d1hg44dt3lynuo.cloudfront.net/api/lunch";
 
 function App() {
   return (
